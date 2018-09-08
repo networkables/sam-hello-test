@@ -39,7 +39,7 @@ phases:
       - ls
       # Package the application with AWS SAM
       #- aws cloudformation package --template-file template.yml --s3-bucket ${S3_BUCKET} --output-template-file packaged.yml
-      - aws cloudformation package --template-file template.yml --s3-bucket codepipeline-us-east-1-146488355049 --output-template-file packaged.yml
+      - aws cloudformation package --template-file template.yml --s3-bucket codepipeline-us-east-1-146488355049 --kms-key-id "arn:aws:kms:us-east-1:213959781399:key/81a9eafe-35cc-4606-ad54-3a4c8f82c4c8" --output-template-file packaged.yml
 
 artifacts:
   files:
