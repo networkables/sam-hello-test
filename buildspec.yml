@@ -4,7 +4,7 @@ env:
     # This S3 bucket is used to store the packaged Lambda deployment bundle.
     # Make sure to provide a valid S3 bucket name (it must exist already).
     # The CodeBuild IAM role must allow write access to it.
-    S3_BUCKET: "sam-hello-test.codepipeline.networkables.com"
+    S3_BUCKET: "codepipeline-us-east-1-146488355049"
     PACKAGE: "github.com/networkables/sam-hello-test"
 
 phases:

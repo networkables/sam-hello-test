@@ -1,6 +1,10 @@
 resource "aws_s3_bucket" "this" {
   bucket = "sam-hello-test.codepipeline.networkables.com"
   acl    = "private"
+
+  versioning {
+    enabled = true
+  }
 }
 
 resource "aws_iam_role" "codepipeline_role" {
